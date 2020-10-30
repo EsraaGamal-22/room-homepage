@@ -1,0 +1,292 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
+    font-family: 'Spartan', sans-serif;
+
+}
+h1{
+    font-size: 1.5rem;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.4em;
+}
+p{
+    color:hsl(0, 0%, 63%);
+    line-height: 2em;
+    font-weight: 400;
+}
+.container{
+    width: 95%;
+    position: absolute;
+    padding:2em 0 2em 2em;
+    z-index: 10;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+
+.logg{
+    margin-left: 10em;
+}
+.menu-items {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    background-color:hsl(0, 0%, 100%);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .change{
+      background-color: hsl(0, 0%, 100%);
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 7px);
+    transform: rotate(-45deg) translate(-8px, 7px);
+    background-color: hsl(0, 0%, 63%);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: hsl(0, 0%, 63%);
+
+  }
+  .nav-max{
+    display: none;
+}
+.nav-min{
+    display:initial;
+    width:75%;
+    position: absolute;
+    top:1.5em;
+    left:5em;
+    z-index: 10;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0em;
+}
+.nav-item{
+    padding:0.5em 0;
+}
+.nav-link{
+    text-decoration: none;
+    color:hsl(0, 0%, 0%);
+    font-weight: 700;
+    border-bottom: 100px;
+}
+.nav-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.slide-1,.slide-2,.slide-3{
+    width:100%;
+}
+.slide--2{
+    display:none;
+}
+.slide--3{
+    display:none;
+}
+.img-desk{
+    display:none;
+}
+.img-mob
+{
+    width:100%;
+}
+.arrows{
+    text-align: center;
+    width:30%;
+    position: absolute;
+    top:300px;
+    right:0;
+}
+.arrow-icon{
+    width:50%;
+    background-color: hsl(0, 0%, 0%);
+    padding:1.5em;
+}
+.arrow-icon:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.content-slide{
+    margin: 2.5em auto 0 auto;
+    width:80%;
+}
+.shopping
+{
+    width:75%;
+    padding:1em 0;
+    color:hsl(0, 0%, 0%);
+    font-weight: 700;
+
+}
+.shop-link{
+    text-transform:uppercase;
+    letter-spacing: 1em;
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+}
+.shopping:hover{
+    filter: invert(27%) sepia(100%) saturate(10%) hue-rotate(346deg) brightness(135%) contrast(120%);
+}
+.about-furniture
+{
+    padding-top:5em;
+}
+.about{
+    width:100%;
+}
+.furn-img img{
+    width:100%;
+}
+.furn-content
+{
+    width:100%;
+    padding:5em 4em;
+}
+@media (max-width:320px)
+{
+    .arrows{
+        top:242px;
+    }
+    .content-slide{
+        width:85%;
+    }
+    .shopping
+    {
+        width:80%;
+
+     }
+}
+@media(min-width:411px)
+{
+    .arrows{
+        top:330px;
+    }
+}
+@media(min-width:540px)
+{
+    .arrows{
+        top:450px;
+    }
+}
+@media(min-width:700px)
+{
+    .logg{
+        margin-left: 25em;
+    }
+    .arrows{
+        width:20%;
+        top:600px;
+    }
+}
+
+@media(min-width:768px)
+{
+    
+    .arrows{
+        top:670px;
+    }
+    
+}
+@media(min-width:1000px)
+{
+    .logg{
+        margin-left: 30em;
+    }
+    .arrows{
+        top:920px;
+    }
+}
+@media(min-width:1200px){
+    h1{
+        font-size: 2.2rem;
+    }
+    .container{
+        width:35%;
+        margin:2em 0;
+    }
+    .row{
+        justify-content: space-between;
+    }
+    .slide--2{
+        display:none;
+    }
+    .slide--3{
+        display:none;
+    }
+    .row-1{
+        display:flex;
+    }
+ 
+    .menu-items{
+        display:none;
+    }
+    .logg{
+        margin: 0;
+        padding-left: 5em;
+    }
+    .nav-max{
+        display:inline-block;
+        width:70%;
+    }
+    .nav-link
+    {
+        color: hsl(0, 0%, 100%);
+    }
+    .img-desk
+    {
+        display: initial;
+        width:100%;
+        height: 100%;
+    }
+    .img-mob{
+        display:none;
+    }
+    
+    .arrows{
+        width:11%;
+        top:457px;
+        right:363px;
+    }
+    .arrow-icon{
+        padding:2.3em;
+    }
+    .content-slide{
+        margin:0;
+        padding-top: 8em;
+        padding-left:9em;
+        width:37%;
+    }
+    .about-furniture
+    {
+       padding-top:0em;
+    }
+    .furn-img{
+        width:40%;
+    }
+    .furn-content{
+        width:55%;
+    }
+    
+
+}
