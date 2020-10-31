@@ -136,7 +136,7 @@ p{
 }
 .shopping
 {
-    width:80%;
+    width:85%;
     padding:1em 0;
     color:hsl(0, 0%, 0%);
     font-weight: 700;
@@ -266,8 +266,8 @@ p{
     
     .arrows{
         width:15%;
-        top:41em;
-        left:75em;
+        top:40.7em;
+        left:74em;
     }
     .arrow-icon{
         padding:2.3em;
