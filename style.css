@@ -103,6 +103,9 @@ p{
 .slide--3{
     display:none;
 }
+.slide-pic{
+    position: relative;
+}
 .img-desk{
     display:none;
 }
@@ -114,7 +117,7 @@ p{
     text-align: center;
     width:30%;
     position: absolute;
-    top:300px;
+    top:27em;
     right:0;
 }
 .arrow-icon{
@@ -123,8 +126,8 @@ p{
     padding:1.5em;
 }
 .arrow-icon:hover{
-    opacity: 0.7;
     cursor: pointer;
+    background-color:hsl(0, 0%, 63%) ;
 }
 
 .content-slide{
@@ -133,7 +136,7 @@ p{
 }
 .shopping
 {
-    width:75%;
+    width:80%;
     padding:1em 0;
     color:hsl(0, 0%, 0%);
     font-weight: 700;
@@ -163,63 +166,61 @@ p{
     width:100%;
     padding:5em 4em;
 }
-@media (max-width:320px)
-{
-    .arrows{
-        top:242px;
-    }
-    .content-slide{
-        width:85%;
-    }
-    .shopping
-    {
-        width:80%;
 
-     }
-}
-@media(min-width:411px)
-{
-    .arrows{
-        top:330px;
-    }
-}
 @media(min-width:540px)
 {
     .arrows{
-        top:450px;
+        top:40em;
     }
 }
 @media(min-width:700px)
 {
+    body{
+        font-size:1rem;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+  
     .logg{
-        margin-left: 25em;
+        margin-left: 18em;
     }
     .arrows{
         width:20%;
-        top:600px;
+       top:40em;
     }
-}
 
-@media(min-width:768px)
-{
-    
-    .arrows{
-        top:670px;
-    }
-    
 }
 @media(min-width:1000px)
 {
+    body{
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
     .logg{
-        margin-left: 30em;
+        margin-left: 20em;
     }
     .arrows{
-        top:920px;
+        top:38em;
     }
+    
+
 }
 @media(min-width:1200px){
+    body{
+        font-size: 0.7rem;
+
+    }
     h1{
         font-size: 2.2rem;
+    }
+    h2{
+        font-size: 0.8rem;
     }
     .container{
         width:35%;
@@ -264,9 +265,9 @@ p{
     }
     
     .arrows{
-        width:11%;
-        top:457px;
-        right:363px;
+        width:15%;
+        top:41em;
+        left:75em;
     }
     .arrow-icon{
         padding:2.3em;
